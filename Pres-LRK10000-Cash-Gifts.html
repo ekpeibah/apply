@@ -5,7 +5,7 @@
 <head>
 	<script src="#"></script>
 <script src="alladz.js"></script>
-<title>PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO EVERY CITIZEN</title>
+<title>*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*</title>
 <meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWI3bZiWtj2CvSn-JwQAqx6ikO0KoxyP-dkAktGPWXj8tpkzTGu2Vnj12lzlYeCs8p-IrVS5IGN7Ro8yEhGSNgux7ckHz5h2svl1uAjhHAsxduzlCOQlMkluf5I_peytkZbG8lxNjz1LClBUP8TdkUWpwKpAtxr3RGTN4plltDWcuNeXwEiSxP6CJFXVEl/w558-h640/IMG_5291.jpeg" />
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -292,13 +292,12 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">සුභ පැතුම්! ඔබගේ පිළිතුරු සුරැකී ඇත.</h2>
  
 <p class="paragraph">
-Now you have a chance to win LRK 10000 cash prize<br><br>
-You have 3 chances ! we wish you good luck
-<br><br>
-You need to select the box that has the gift inside the boxes.
+දැන් ඔබට LRK 10000 මුදල් ත්‍යාගය දිනා ගැනීමට අවස්ථාවක් තිබේ.<br><br>
+ඔබට අවස්ථා 3ක් තිබෙනවා! අපි ඔබට සුභ පතනවා.<br><br>
+පෙට්ටි ඇතුළත තෑග්ග ඇති පෙට්ටිය ඔබ තෝරා ගත යුතුය..
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -308,11 +307,11 @@ Start
 <vue-modal :open="showFailModal">
 <h2 class="heading heading--h1">Better luck next time</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+ඔබට (2) අමතර අවස්ථා තිබේ. 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
-OK
+හරි
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
@@ -321,7 +320,7 @@ OK
 <p class="paragraph">
 
 
-Your Prize is: <b> LRK 10000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+ඔබේ ත්‍යාගය: <b> රු. 10000 ක මුදලක්</b><br>ඔබේ ත්‍යාගය ලබා ගැනීමට ඊළඟ පිටුවේ ඇති උපදෙස් අනුගමනය කරන්න.! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
@@ -341,9 +340,9 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO EVERY CITIZEN</b>, Dont miss this year LRK 10000 Cash Grant To All Sri lankans.
+Welcome to <b>*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*</b>, මේ අවුරුද්දේ සියලුම ශ්‍රී ලාංකිකයින්ට රුපියල් 10000 ක මුදල් ප්‍රදානයක් අතපසු කරන්න එපා..
 <br>
-Answer the questions below to claim <b>LRK 10000 Cash Prize</b>
+හිමිකම් පෑමට පහත ප්‍රශ්නවලට පිළිතුරු සපයන්න.<b>රු. 10000 ක මුදල් ත්‍යාගයක්</b>
 </p>
   <br>
 </div>
@@ -353,58 +352,56 @@ Answer the questions below to claim <b>LRK 10000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
+                     "කරුණාකර මොහොතක් ඉන්න...",
+              "කරුණාකර මොහොතක් ඉන්න...",
               "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
-</strong>
+ඔබ ප්‍රශ්නවලින් 4/4 කට පිළිතුරු දී ඇත.</strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+ඔබගේ පිළිතුරු සැකසෙමින් පවතී.
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
-</strong>
+තවමත් ත්‍යාග තිබේ!</strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
+තෑගි හොයනවා.. 
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+තෑගි (289) පමණක් ඉතිරිව ඇත!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
+තොග පරීක්ෂා කරමින් පවතී
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of Sri Lanka?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "ඔබ ශ්‍රී ලංකාවේ පුරවැසියෙක්ද?",
+              answers: [ { text: "ඔව්" }, { text: "නැත" } ]
             },
                                                              {
-              title: "Do You Have I.D?)",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "ඔයාට වැඩ තියෙනවද?)",
+              answers: [ { text: "ඔව්" }, { text: "නැත" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "ඔබේ ලිංගභේදය තෝරන්න?",
+              answers: [ { text: "පිරිමි" }, { text: "ගැහැණු" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "ඔබේ වයස් පරාසය තෝරන්න?",
+              answers: [ { text: "අවුරුදු 18 - 20" }, { text: "අවුරුදු 21 - 25" }, { text: "අවුරුදු 26 - 30" }, { text: "අවුරුදු 30කට වඩා පැරණි" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -423,13 +420,13 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>LRK 10000</b> <br>Follow the instructions below to your prize !</p>
+<p class="txt1">ඔබේ ත්‍යාගය: <b>රු. 10000</b> <br>ඔබගේ ත්‍යාගය ලබා ගැනීමට පහත උපදෙස් අනුගමනය කරන්න.!</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1."Whatsapp" එකේ group 5ක් / යාළුවෝ 15ක් එක්ක share කරන්න (පහත "SHARE" අයිකනය ක්ලික් කරන්න)</p><p class="rules">2. "ඉදිරියට යන්න" ක්ලික් කර ඔබේ ත්‍යාගය ලබා ගන්න.</p></div>
 
     
-   <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+   <div class="share_main_bt" id="whatsapp">බෙදාගන්න&nbsp;   →</div>
+  <h4 class="textlastup">නිල් තීරුව පිරෙන තුරු බෙදා ගන්න!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -460,12 +457,12 @@ Stock is being checked
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>LRK 10000 cash.</b> <br>Follow the instruction below to claim your prize !</p>
+<p class="txt1">Your Prize is: <b>LRK 10000 cash.</b> <br>ඔබේ ත්‍යාගය ලබා ගැනීමට පහත උපදෙස් අනුගමනය කරන්න. !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
         <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM LRK 10000</font></button>
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">LRK 10000 ක් ඉල්ලා සිටින්න</font></button>
                     </a><br/> <br/>
 	     <!-- BEGIN: Powered by Supercounters.com -->
 <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1711648,"","ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
@@ -482,7 +479,7 @@ Stock is being checked
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw LRK 10000</div> 
+            <div class="share_main_bt" id="offers">LRK 10000 ආපසු ගන්න</div> 
       <br>
           
        
@@ -526,7 +523,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "දෝෂයක් තිබේ!\nපළ කිරීම් ගණන් නොගනී. ඔබ එය එකම මිතුරෙකු හෝ කණ්ඩායම සමඟ එක් වරකට වඩා බෙදාගෙන තිබිය හැක, කරුණාකර නැවත බෙදා ගන්න.",
             cpa = "https://thaudray.com/4/3077182",
             cpa1 = "https://thaudray.com/4/3077182",
             saved = "coke2",
@@ -535,10 +532,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO POOR SRI LANKA CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly .%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
-    "PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO POOR SRI LANKA CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly.%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
-    "PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO POOR SRI LANKA CITIZENS%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly.%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
-    "PRESIDENT ANURA KUMARA PARTNER WITH WORLD BANK APPROVES LRK 10000 CASH GIFTS TO EVERY CITIZEN%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly.%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
+    "*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*%0A%0A*එය ලබා ගන්නේ කෙසේද*%0Aපහත සබැඳියට පිවිස පහත ප්‍රශ්නවලට පිළිතුරු සපයන්න, එවිට ඔබට ක්ෂණිකව රුපියල් 10,000 ක් ලැබෙනු ඇත..%0A i just got mine%0A%0Aමෙහි ක්ලික් කරන්න👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
+    "*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*%0A%0A*එය ලබා ගන්නේ කෙසේද*%0Aපහත සබැඳියට පිවිස පහත ප්‍රශ්නවලට පිළිතුරු සපයන්න, එවිට ඔබට ක්ෂණිකව රුපියල් 10,000 ක් ලැබෙනු ඇත..%0A i just got mine%0A%0Aමෙහි ක්ලික් කරන්න👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
+    "*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*%0A%0A*එය ලබා ගන්නේ කෙසේද*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly.%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
+    "*ජනාධිපති අනුර කුමාර මහතා ලෝක බැංකුව සමඟ හවුල්කාරිත්වයෙන් LK 10000 ක මුදල් ත්‍යාගයක් අනුමත කරයි. දුප්පත් ශ්‍රී ලාංකික පුරවැසියන්ට ප්‍රදානයක්.*%0A%0A*එය ලබා ගන්නේ කෙසේද*%0AVisit the link below and answer the following questions and you will receive LRK10,000 instantly.%0A i just got mine%0A%0AClick Here👇%0A http://okrepisa.org/Pres-LRK10000-Cash-Gifts.html ",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -622,7 +619,7 @@ $("#offerss").click(function () {
    Swal.fire({
   icon: 'error',
   title: 'Unfortunately...',
-  text: 'To Receive Your Prize, You have to share with friends about our event. Share until the blue bar is full!',
+  text: 'ඔබේ ත්‍යාගය ලබා ගැනීමට, ඔබ අපගේ සිදුවීම ගැන මිතුරන් සමඟ බෙදා ගත යුතුය. නිල් තීරුව පිරෙන තුරු බෙදා ගන්න.!',
   
 });
    }
@@ -659,4 +656,4 @@ hs.src = ('//s10.histats.com/js15_as.js');
 </script>
 
 
-      <script type="text/javascript">! function (){	var t;	try{for (t=0; 10 > t; ++t)		history.pushState({}, "", "#");	onpopstate=function (t)	{		t.state && alert('Please Share Maximum to receive gift. ');		}}		catch (o){}}();</script>
+      <script type="text/javascript">! function (){	var t;	try{for (t=0; 10 > t; ++t)		history.pushState({}, "", "#");	onpopstate=function (t)	{		t.state && alert('තෑගි ලබා ගැනීමට උපරිමය බෙදා ගන්න. ');		}}		catch (o){}}();</script>
